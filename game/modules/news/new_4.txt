@@ -1,0 +1,1 @@
+эта новость - проба. <a href=index.php>index.php</a> <b>bbcode</b>

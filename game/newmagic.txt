@@ -1,0 +1,2 @@
+INSERT INTO magic VALUES ('marow', 'marow', '0', 'war', '16', '23', '41', '', '', '0', '0', '0', 'in ost', '11', '1', '16', 'i.m.rea.polynq:3|i.m.rea.rose_spike:5', '10');
+INSERT INTO magic VALUES ('hhh', 'hhh', '1', 'hea', '34', '48', '84', '', '', '1', '1', '0', 'ddd', '39', '2', '54', '', '5');

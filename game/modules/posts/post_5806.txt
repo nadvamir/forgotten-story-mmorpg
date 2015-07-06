@@ -1,0 +1,1 @@
+Unknown error type: [2] mysql_connect() [function.mysql-connect]: Lost connection to MySQL server at \\\'reading initial communication packet\\\', system error: 111<br/>Error on line 12 in file /home/vol12/byethost17.com/b17_5589218/htdocs/game/modules/config.php<br/><br/>Could not connect to mysql... Lost connection to MySQL server at \\\'reading initial

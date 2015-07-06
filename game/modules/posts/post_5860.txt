@@ -1,0 +1,1 @@
+Unknown error type: [8] Undefined index: zhpolosnutq<br/>Error on line 8 in file /home/vol12/byethost17.com/b17_5589218/htdocs/game/modules/s_showkombo_i.php

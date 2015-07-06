@@ -1,0 +1,5 @@
+Siap sis installas veikia, (idiegiant galima pasisrinkti kalba,
+namie pas mane rusu, galima idiegti anglu. zinant lietuviu kalbininkus,
+ lietuviu geriau nediegti, jei yra isvis) bet jeigu netycia jis neinstaliuotu,
+ adresas ji parsisiusti : http://www.bloodshed.net/dev/devcpp.html
+ na, bet reik tiketis jog nepireiks...

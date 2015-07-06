@@ -1,0 +1,64 @@
+Encounter 1 ninja:
+
+A> ...(kazkoks juodai apsirenges zmogelis tupi medy)
+1> ei, bachuras, ka ten medy veiki? kate pametei ten? >B
+2> ...(tegul sau tupi) > end
+
+B> kate? kokia kate? as neturiu kates! vykdau slapta lordo makoto uzduoti! netrugdyk! ... pala! O kas tu? TU MANE MATAI?!
+1> as, user, malonu susipazinti :) taip matau o kas jus toks?       >D
+2> aisku matau. o kas as ne tavo reikalas, geriau sakyk koki ten makoto paminejai. >C
+
+C> velnias.. vel per daug prisisnekejau... laikas dingti...(pasirodo dumu kamuolys ir ninja isnyksta)
+1> keistas zmogelis...... >end Q=1
+
+D> mane vadina hiroki, malonu susi.... AAA! kodel as cia su tavim pliurpiu? juk vykdziau uzduoti... bet tu man sutrugdei! velnias... kol dar ne viska isplepejau geriau dingsiu!
+(pasirodo dumu kamuolys ir ninja isnyksta)
+1> keistas zmogelis...... >end Q=1
+
+if Q==1
+Encounter 2 ninja:
+
+A> ...(tas pats ninja vel tupi medy tik ant kitos sakos)
+1> svekas, dar ta pacia uzduoti vykdai? >B
+2> ...(tegul sau tupi) > end
+
+B> ... vel mane pastebejai... as gi taip puikiai uzsimaskaves.. netrugdyk!
+1> prastai tu neuzsimaskaves. betkas pamatytu. >C
+2> na netrugdysiu tada... iki ;) > end
+
+C> sakai as prastas ninja?! taip negali but! mane treniravo pats lordas makoto! netrugdyk sakiau!
+1> makoto? niekad apie toki negirdejau... >D
+2> na netrugdysiu tada... iki ;) > end 
+
+D> ir nereik tau apie ji daugiau zinot. mokinius jis pasirenka pats. velnias... taikinys vel pradingo.. ir del visko kaltas tu! man cia daugiau jau ner ka veikt. (pasirodo dumu kamuolys ir ninja isnyksta)
+1> keistas zmogelis..... >end Q=2
+
+if Q==2
+Encounter 3 makoto:
+
+A> tu turbut busi tas kuris pasak hirokio trugdo jam vygdyti mano pavesta uzduoti. tai tiesa?
+1> ne, baikit juokus as jokio hirokio niekad nemaciau. >B
+2> na, mes buvom susitike bet jei trugdziau tai netycia. >C
+
+B> tikrai?  na tu atrodai panasus i ta zmogu kuri hirokis nupasakojo...
+1> ne, tai tikrai ne as. jus kazka supainiojot. >D
+2> na, mes buvom susitike bet jei trugdziau tai netycia. >C
+
+C> aisku... na jei jau sugebi pastebeti uzsimaskavusius ninjas tai reiskiu turi talenta.. jei noresi ko nors ismokti uzsuk i mano dojo.
+1> aciu, su malonumu :) Q=complete give dojo-entrance-permit
+
+D> aisku... na tada netrugdysiu...
+1> viso. >end Q=failed
+
+
+
+
+
+
+
+
+
+
+
+
+

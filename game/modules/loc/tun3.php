@@ -1,0 +1,40 @@
+﻿<?php
+  $locmap = 'tun3';
+  /*$w = do_mysql ("SELECT weather FROM maps WHERE map = '".$locmap."';");
+  $w = mysql_result ($w, 0);
+  if ($w == 0 || $w == 1 || $w == 0.5) $temperature = -1;
+  if ($w == 2 || $w == 3 || $w == 4 || $w == 5) $temperature = 0;
+  if ($w == 6) $temperature = 1;*/
+  global $UND;
+  $UND = 1;
+  $temperature = -1;
+  $l['1x2'] = 'tun3|1x2~тоннель~тоннель~'.$temperature.'~8~0~1~tun2|9x1:6';
+  $l['1x3'] = 'tun3|1x3~тоннель~тоннель~'.$temperature.'~25~0~1~';
+  $l['1x4'] = 'tun3|1x4~тоннель~тоннель~'.$temperature.'~267~0~1~tun2|9x3:6';
+  $l['1x5'] = 'tun3|1x5~тоннель~тоннель~'.$temperature.'~7~0~1~tun2|9x5:4';
+  $l['1x7'] = 'tun3|1x7~тоннель~тоннель~'.$temperature.'~5~0~1~tun2|9x7:4';
+  $l['2x1'] = 'tun3|2x1~тоннель~тоннель~'.$temperature.'~15~0~1~';
+  $l['2x3'] = 'tun3|2x3~тоннель~тоннель~'.$temperature.'~346~0~1~';
+  $l['2x7'] = 'tun3|2x7~тоннель~тоннель~'.$temperature.'~45~0~1~';
+  $l['3x1'] = 'tun3|3x1~тоннель~тоннель~'.$temperature.'~45~0~1~';
+  $l['3x4'] = 'tun3|3x4~тоннель~тоннель~'.$temperature.'~26~0~1~';
+  $l['3x5'] = 'tun3|3x5~Черный Мост~Черный Мост~'.$temperature.'~27~0~1~';
+  $l['3x6'] = 'tun3|3x6~тоннель~тоннель~'.$temperature.'~27~0~1~';
+  $l['3x7'] = 'tun3|3x7~тоннель~тоннель~'.$temperature.'~457~0~1~';
+  $l['4x1'] = 'tun3|4x1~тоннель~тоннель~'.$temperature.'~245~0~1~';
+  $l['4x2'] = 'tun3|4x2~тоннель~тоннель~'.$temperature.'~27~0~1~';
+  $l['4x3'] = 'tun3|4x3~тоннель~тоннель~'.$temperature.'~37~0~1~';
+  $l['4x7'] = 'tun3|4x7~тоннель~тоннель~'.$temperature.'~45~0~1~';
+  $l['5x1'] = 'tun3|5x1~тоннель~тоннель~'.$temperature.'~45~0~1~';
+  $l['5x2'] = 'tun3|5x2~тупик~тоннель~'.$temperature.'~2~0~1~';
+  $l['5x3'] = 'tun3|5x3~тоннель~тоннель~'.$temperature.'~57~0~1~';
+  $l['5x4'] = 'tun3|5x4~тоннель~тоннель~'.$temperature.'~256~0~1~';
+  $l['5x5'] = 'tun3|5x5~тоннель~тоннель~'.$temperature.'~57~0~1~';
+  $l['5x7'] = 'tun3|5x7~тоннель~тоннель~'.$temperature.'~45~0~1~';
+  $l['6x1'] = 'tun3|6x1~тоннель~тоннель~'.$temperature.'~24~0~1~';
+  $l['6x2'] = 'tun3|6x2~тупик~тоннель~'.$temperature.'~7~0~1~';
+  $l['6x3'] = 'tun3|6x3~тоннель~тоннель~'.$temperature.'~24~0~1~';
+  $l['6x4'] = 'tun3|6x4~тоннель~тоннель~'.$temperature.'~47~0~1~';
+  $l['6x5'] = 'tun3|6x5~тупик~тоннель~'.$temperature.'~4~0~1~';
+  $l['6x7'] = 'tun3|6x7~тупик~тоннель~'.$temperature.'~4~0~1~';
+?>

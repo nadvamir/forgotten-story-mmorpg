@@ -1,0 +1,33 @@
+﻿<?php
+  $locmap = 'prf2';
+  $w = do_mysql ("SELECT weather FROM maps WHERE map = '".$locmap."';");
+  $w = mysql_result ($w, 0);
+  if ($w == 0 || $w == 1 || $w == 0.5) $temperature = -1;
+  if ($w == 2 || $w == 3 || $w == 4 || $w == 5) $temperature = 0;
+  if ($w == 6) $temperature = 1;
+  $l['1x1'] = 'prf2|1x1~Лес~Лес~'.$temperature.'~25~0~0~';
+  $l['1x2'] = 'prf2|1x2~Лес~Лес~'.$temperature.'~27~0~0~';
+  $l['1x3'] = 'prf2|1x3~Лес~Лес~'.$temperature.'~27~0~0~';
+  $l['1x4'] = 'prf2|1x4~Лес~Лес~'.$temperature.'~78~0~0~';
+  $l['1x5'] = 'prf2|1x5~Пригородный лес~Пригородный лес~'.$temperature.'~5~0~0~prf3|9x5:4';
+  $l['2x1'] = 'prf2|2x1~Лес~Лес~'.$temperature.'~45~0~0~';
+  $l['2x2'] = 'prf2|2x2~Лес~Лес~'.$temperature.'~28~0~0~';
+  $l['2x3'] = 'prf2|2x3~Лес~Лес~'.$temperature.'~17~0~0~';
+  $l['2x4'] = 'prf2|2x4~Лес~Лес~'.$temperature.'~58~0~0~';
+  $l['2x5'] = 'prf2|2x5~Лес~Лес~'.$temperature.'~48~0~0~';
+  $l['3x1'] = 'prf2|3x1~лес~лес~'.$temperature.'~134~0~0~prf4|3x6:7';
+  $l['3x3'] = 'prf2|3x3~Лес~Лес~'.$temperature.'~15~0~0~';
+  $l['3x4'] = 'prf2|3x4~Лес~Лес~'.$temperature.'~14~0~0~';
+  $l['4x2'] = 'prf2|4x2~тропинка~тропинка~'.$temperature.'~268~0~0~';
+  $l['4x3'] = 'prf2|4x3~тропинка~тропинка~'.$temperature.'~2457~0~0~';
+  $l['4x4'] = 'prf2|4x4~тропинка~тропинка~'.$temperature.'~27~0~0~';
+  $l['4x5'] = 'prf2|4x5~Пригородный лес~Пригородный лес~'.$temperature.'~7~0~0~cway|11x3:2';
+  $l['5x1'] = 'prf2|5x1~Лес~Лес~'.$temperature.'~15~0~0~';
+  $l['5x3'] = 'prf2|5x3~Лес~Лес~'.$temperature.'~34~0~0~';
+  $l['6x1'] = 'prf2|6x1~Лес~Лес~'.$temperature.'~45~0~0~';
+  $l['6x2'] = 'prf2|6x2~Лес~Лес~'.$temperature.'~25~0~0~';
+  $l['6x3'] = 'prf2|6x3~Лес~Лес~'.$temperature.'~27~0~0~';
+  $l['6x4'] = 'prf2|6x4~Лес~Лес~'.$temperature.'~67~0~0~';
+  $l['7x1'] = 'prf2|7x1~Лес~Лес~'.$temperature.'~24~0~0~';
+  $l['7x2'] = 'prf2|7x2~Пригородный лес~Пригородный лес~'.$temperature.'~47~0~0~prf1|1x2:5';
+?>

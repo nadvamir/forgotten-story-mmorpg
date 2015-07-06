@@ -1,0 +1,34 @@
+//poison    	- -1% max HP per 5s, hp neregeneruojasi
+//curse		- negalima atgauti hp net su potais
+#paralized	- 2x leciau atakuoji, +15% atakos sekme
+//bleading	- -1HP per 1s, hp neregeneruojasi
+//fear		- 2x leciau atakuoji, negalimas kritinis ir atsakomasis smugiai
+//disease		- hp neregeneruojasi
+//blind		- -50% atakos sekme
+//burn		- -5% likusios HP per 5s, hp neregeneruojasi
+//blagoslaven	- negauna effektu 5min
+//zamedlen	- 2x leciau atakuoji, +15% atakos sekme, ves *2
+
+//paralizovan 	- 30sek bezdejstvija
+//hamelion	- nik nechitaemogo cveta
+//blagouhanie	- nik rozovyj
+
+//prosvetlenie	- int++ (5)
+//jarostq 	- str++ (5)
+//skorostq	- dex++ (5)
+//koordinacija	- rea++ (5)
+
+//aura_magii	- zawita ot vseh shkol
+//aura_plameni	- zawita ot shkoly ognja
+//aura_lqda	- zawita ot shkoly vody
+//aura_efira	- zawita ot shkoly zemli
+//aura_vetra	- zawita ot shkoly vetra
+//aura_illjuzii	- zawita ot shkoly illjuzii
+//aura_podzemelqja- zawita ot shkoly podzemnoj magii
+//aura_elqfov	- zawita ot elqfjskoj magii
+//aura_moguwestvennyh- zawita ot drevneelqfijskoj magii
+
+//pryzhok 	- hod cherez 2 lokacii
+//levitacija	- hod cherez 2 lokacii, povrezhdenie tolqko lukom
+
+//udacha		- uluchshenie shansov masterstva

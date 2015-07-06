@@ -1,0 +1,1 @@
+Подтверждаю. Unknown error type: [8] Undefined variable: di<br/>Error on line 15 in file /home/vol12/byethost17.com/b17_5589218/htdocs/game/modules/f_get_damaged_items.php

@@ -1,0 +1,90 @@
+   x     o-o-o-o 
+  /|\    |     | 
+ x x x-x o x o o 
+ |/      | |/  | 
+ x o x-x x-x-  o 
+ | | | | | |\  | 
+ x-x-x-x x o o x 
+   |     |     | 
+-x-x-x-x-x-x-x-x-
+   |     |       
+ o-x o o x o     
+   |  \| | |     
+ o-x o-x-x-x-x   
+   |  /| | |\    
+ o-x o o x o o   
+   |     |       
+ o-x-x-x-x-o     
+         |       
+
+
+
+<?php
+  // pokazyvaet kartu shematicheskuju
+  $mapname = substr ($p['location'], 0, 4);
+  include 'modules/loc/'.$mapname.'.php';
+  $left = $right = 0; // samaja vysokaja tochka, samaja pravaja tochka (ploshjadq = left * right)
+  foreach ($l as $key => $val)
+  {
+    $loc = explode ('~', $l[$key]);
+    $key = explode ('x', $key);
+    $x = $key[0] * 2 - 1;
+    $y = $key[1] * 2 - 1;
+    if ($loc[6] == 1) $map[$y][$x] = 'o';
+    if (!$loc[6]) $map[$y][$x] = 'x';
+    $c = strlen ($loc[4]);
+    for ($i = 0; $i < $c; $i++)
+    {
+      $map = add_map ($map, $loc[4][$i], $x, $y);
+    }
+    if ($loc[7])
+    {
+      $loc[7] = explode (':', $loc[7]);
+      $map = add_map ($map, $loc[7][1], $x, $y);
+    }
+    if ($y > $left) $left = $y;
+    if ($x > $right) $right = $x;
+  }
+  function add_map ($map, $i, $x, $y)
+  {
+    if ($i == 1) { $x--; $y++; $s = '&#92;'; }
+    elseif ($i == 2) { $y++; $s = '|'; }
+    elseif ($i == 3) { $x++; $y++; $s = '/'; }
+    elseif ($i == 4) { $x--; $s = '-'; }
+    elseif ($i == 5) { $x++; $s = '-'; }
+    elseif ($i == 6) { $x--; $y--; $s = '/'; }
+    elseif ($i == 7) { $y--; $s = '|'; }
+    else { $x++; $y--; $s = '&#92;'; }
+    $map[$y][$x] = $s;
+    return $map;
+  }
+
+  // teperq vid karty:
+  //$f = '<b>'.$loc[1].'</b><br/>';
+  $f = '<table cellpadding="0" cellspasing="0">';
+  for ($i = $left + 1; $i > -1; $i--)
+  {
+    if (!$map[$i]) continue;
+    $f .= '<tr>';
+    // perebiraem s verhu v niz (0x0 samyj nizkij element)
+    for ($a = 0; $a < $right + 2; $a++)
+    {
+      $f .= '<td height="5px" width="5px">';
+      if (!$map[$i][$a]) $f .= '&nbsp;';
+      else $f .= ''.$map[$i][$a].'';
+      $f .= '</td>';
+    }
+    $f .= '</tr>';
+  }
+  $f .= '</table>';
+  /*$txt = $f;
+  $txt = str_replace ('<br/>', "\r\n", $txt);
+  $txt = str_replace ('<pre>', '', $txt);
+  $txt = str_replace ('</pre>', '', $txt);
+  $txt = str_replace ('&#92;', "\\", $txt);
+  $txt = str_replace ('&nbsp;', ' ', $txt);
+  $fd = fopen ('rele.txt', 'w');
+  fwrite ($fd, $txt);
+  fclose ($fd);*/
+  exit_msg ('карта местности', $f);
+?>

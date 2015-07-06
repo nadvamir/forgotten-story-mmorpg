@@ -1,0 +1,46 @@
+﻿<?php
+  // veshi eda 
+  $it['i.f.tra.podorozhnik'] = 'трава|i.f.tra.podorozhnik|f|1|20~10~1~0~0|подорожник|10|0|0|0|0|0';
+  $it['i.f.tra.belladonna'] = 'трава|i.f.tra.belladonna|f|1|-45~100~0~0~0|белладонна|10|0|0|0|0|0';
+  $it['i.f.tra.zhenqshenq'] = 'трава|i.f.tra.zhenqshenq|f|1|20~70~0~0~0|женьшень|10|0|0|0|0|0';
+  $it['i.f.tra.chistotel'] = 'трава|i.f.tra.chistotel|f|1|-20~50~0~0~0|чистотел|10|0|0|0|0|0';
+  $it['i.f.tra.mjata'] = 'трава|i.f.tra.mjata|f|1|50~50~0~0~0|мята|10|0|0|0|0|0';
+  $it['i.f.tra.artishek_posevnoj'] = 'трава|i.f.tra.artishek_posevnoj|f|1|100~0~0~0~0|артишек посевной|10|0|0|0|0|0';
+  $it['i.f.tra.anhuza_lekarstvennaja'] = 'трава|i.f.tra.anhuza_lekarstvennaja|f|1|10~97~0~0~0|анхуза лекарственная|10|0|0|0|0|0';
+  $it['i.f.tra.anis'] = 'трава|i.f.tra.anis|f|1|36~15~0~1~0|анис|10|0|0|0|0|0';
+  $it['i.f.tra.akonit_protivojadnyj'] = 'трава|i.f.tra.akonit_protivojadnyj|f|1|72~31~0~1~0|аконит противоядный|10|0|0|0|0|0';
+  $it['i.f.tra.bagulqnik_bolotnyj'] = 'трава|i.f.tra.bagulqnik_bolotnyj|f|1|41~52~0~0~0|багульник болотный|10|0|0|0|0|0';
+  $it['i.f.tra.bessmertnik_peschanyj'] = 'трава|i.f.tra.bessmertnik_peschanyj|f|1|200~30~0~0~0|бессмертник песчаный|10|0|0|0|0|0';
+  $it['i.f.tra.buzina'] = 'трава|i.f.tra.buzina|f|1|71~31~0~0~0|бузина|10|0|0|0|0|0';
+  $it['i.f.tra.valeriana'] = 'трава|i.f.tra.valeriana|f|1|50~58~0~0~0|валериана|10|0|0|0|0|0';
+  $it['i.f.tra.geranq_bolotnaja'] = 'трава|i.f.tra.geranq_bolotnaja|f|1|-10~71~0~0~0|герань болотная|10|0|0|0|0|0';
+  $it['i.f.tra.goroshek_myshinyj'] = 'трава|i.f.tra.goroshek_myshinyj|f|1|30~43~1~0~0|горошек мышиный|10|0|0|0|0|0';
+  $it['i.f.tra.djavesil'] = 'трава|i.f.tra.djavesil|f|1|16~38~0~0~0|дявесил|10|0|0|0|0|0';
+  $it['i.f.tra.dymjanka'] = 'трава|i.f.tra.dymjanka|f|1|82~11~0~0~0|дымянка|10|0|0|0|0|0';
+  $it['i.f.tra.ezhevika'] = 'трава|i.f.tra.ezhevika|f|1|42~42~0~0~0|ежевика|10|0|0|0|0|0';
+  $it['i.f.tra.zhabrica_skuchennaja'] = 'трава|i.f.tra.zhabrica_skuchennaja|f|1|91~32~1~0~0|жабрица скученная|10|0|0|0|0|0';
+  $it['i.f.tra.zhivuchka_polzuchaja'] = 'трава|i.f.tra.zhivuchka_polzuchaja|f|1|90~38~1~0~0|живучка ползучая|10|0|0|0|0|0';
+  $it['i.f.tra.zajcegub_opqjanjajushij'] = 'трава|i.f.tra.zajcegub_opqjanjajushij|f|1|50~-50~1~0~0|зайцегуб опьяняюший|10|0|0|0|0|0';
+  $it['i.f.tra.zaraziha_belaja'] = 'трава|i.f.tra.zaraziha_belaja|f|1|32~41~0~0~0|заразиха белая|10|0|0|0|0|0';
+  $it['i.f.tra.zmeegolovnik_chuzhezemnyj'] = 'трава|i.f.tra.zmeegolovnik_chuzhezemnyj|f|1|43~10~0~0~0|змееголовник чужеземный|10|0|0|0|0|0';
+  $it['i.f.tra.gorec_vqjuwijsja'] = 'трава|i.f.tra.gorec_vqjuwijsja|f|1|38~71~0~0~0|горец вьющийся|10|0|0|0|0|0';
+  $it['i.f.tra.klever_lugovoj'] = 'трава|i.f.tra.klever_lugovoj|f|1|19~43~0~0~0|клевер луговой|10|0|0|0|0|0';
+  $it['i.f.tra.len'] = 'трава|i.f.tra.len|f|1|22~40~0~0~0|лён|10|10|0|0|0|0';
+  $it['i.f.tra.mak_opiumnyj'] = 'трава|i.f.tra.mak_opiumnyj|f|1|10~91~0~0~0|мак опиумный|10|0|0|0|0|0';
+  $it['i.f.tra.mordovnik_sharogolovyj'] = 'трава|i.f.tra.mordovnik_sharogolovyj|f|1|-40~40~1~0~0|мордовник шароголовый|10|0|0|0|0|0';
+  $it['i.f.tra.nezabudka_lesnaja'] = 'трава|i.f.tra.nezabudka_lesnaja|f|1|44~88~0~0~0|незабудка лесная|10|0|0|0|0|0';
+  $it['i.f.tra.ogurec_posevnoj'] = 'трава|i.f.tra.ogurec_posevnoj|f|1|53~32~0~0~0|огурец посевной|10|0|0|0|0|0';
+  $it['i.f.tra.polynq_bolotnaja'] = 'трава|i.f.tra.polynq_bolotnaja|f|1|11~61~0~0~0|полынь болотная|10|0|0|0|0|0';
+  $it['i.f.tra.revenq_tatarskij'] = 'трава|i.f.tra.revenq_tatarskij|f|1|9~53~1~0~0|ревень татарский|10|0|0|0|0|0';
+  $it['i.f.tra.smorodina_krasnaja'] = 'трава|i.f.tra.smorodina_krasnaja|f|1|8~45~0~0~0|смородина красная|10|0|0|0|0|0';
+  $it['i.f.tra.tysjachelistnik'] = 'трава|i.f.tra.tysjachelistnik|f|1|17~73~1~0~0|тысячелистник|10|0|0|0|0|0';
+  $it['i.f.tra.ukrop'] = 'трава|i.f.tra.ukrop|f|1|5~21~0~0~0|укроп|10|0|0|0|0|0';
+  $it['i.f.tra.hmelq'] = 'трава|i.f.tra.hmelq|f|1|99~-99~0~0~0|хмель|10|0|0|0|0|0';
+  $it['i.f.tra.cikorij'] = 'трава|i.f.tra.cikorij|f|1|200~0~0~0~0|цикорий|10|0|0|0|0|0';
+  $it['i.f.tra.chistec_lesnoj'] = 'трава|i.f.tra.chistec_lesnoj|f|1|37~37~0~0~0|чистец лесной|10|0|0|0|0|0';
+  $it['i.f.tra.chernika'] = 'трава|i.f.tra.chernika|f|1|8~70~0~0~0|черника|10|0|0|0|0|0';
+  $it['i.f.tra.shipovnik_sobachij'] = 'трава|i.f.tra.shipovnik_sobachij|f|1|10~200~0~0~0|шиповник собачий|10|0|0|0|0|0';
+  $it['i.f.tra.konqskij_wavelq'] = 'трава|i.f.tra.konqskij_wavelq|f|1|12~39~0~0~0|коньский щавель|10|0|0|0|0|0';
+  $it['i.f.tra.jesparcet_peschanyj'] = 'трава|i.f.tra.jesparcet_peschanyj|f|1|7~107~0~0~0|эспарцет песчаный|10|0|0|0|0|0';
+  $it['i.f.tra.jachmenq'] = 'трава|i.f.tra.jachmenq|f|1|35~-35~0~0~0|ячмень|10|0|0|0|0|0';
+?>

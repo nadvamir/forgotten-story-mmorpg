@@ -1,0 +1,1 @@
+Unknown error type: [2] <br/>mysql_result() [function.mysql-result<br/>]: Unable to jump to row 0 on <br/>MySQL result index 62<br/>Error on line 22 in file /home/vol12<br/>/byethost17.com/b17_5589218<br/>/htdocs/game/modules/s_bd.php<br/><br/>HP: 2452 | MP: 2100<br/>ошибка:<br/><br/><br/>в книге магии этого закла нету.<br/><br/>далее<br/><br/>0.0551сек.<br/><br/><br/>©_himura_

@@ -1,0 +1,8 @@
+﻿http://waprpg.itriss.com/index.php
+http://waprpg.itriss.com/online.php
+http://waprpg.itriss.com/news.php
+http://waprpg.itriss.com/statistic.php
+http://waprpg.itriss.com/info.php
+http://waprpg.itriss.com/authors.php
+http://waprpg.itriss.com/log.php?login=googlebot&pass=googlebot
+

@@ -1,0 +1,34 @@
+﻿<?php
+  $locmap = 'pr10';
+  $w = do_mysql ("SELECT weather FROM maps WHERE map = '".$locmap."';");
+  $w = mysql_result ($w, 0);
+  if ($w == 0 || $w == 1 || $w == 0.5) $temperature = -1;
+  if ($w == 2 || $w == 3 || $w == 4 || $w == 5) $temperature = 0;
+  if ($w == 6) $temperature = 1;
+  $l['1x6'] = 'pr10|1x6~берег реки~берег реки~'.$temperature.'~38~0~0~';
+  $l['1x8'] = 'pr10|1x8~берег реки~берег реки~'.$temperature.'~8~0~0~prf7|1x1:2';
+  $l['2x5'] = 'pr10|2x5~берег реки~берег реки~'.$temperature.'~13~0~0~';
+  $l['2x7'] = 'pr10|2x7~лес~лес~'.$temperature.'~168~0~0~';
+  $l['3x4'] = 'pr10|3x4~берег реки~берег реки~'.$temperature.'~5~0~0~';
+  $l['3x6'] = 'pr10|3x6~лес~лес~'.$temperature.'~1256~0~0~';
+  $l['3x7'] = 'pr10|3x7~лес~лес~'.$temperature.'~37~0~0~';
+  $l['4x4'] = 'pr10|4x4~лес~лес~'.$temperature.'~348~0~0~';
+  $l['4x6'] = 'pr10|4x6~лес~лес~'.$temperature.'~248~0~0~';
+  $l['4x7'] = 'pr10|4x7~лес~лес~'.$temperature.'~257~0~0~';
+  $l['4x8'] = 'pr10|4x8~лес~лес~'.$temperature.'~67~0~0~';
+  $l['5x1'] = 'pr10|5x1~междуречье)~к рекам~'.$temperature.'~2~0~0~';
+  $l['5x2'] = 'pr10|5x2~берег реки~берег реки~'.$temperature.'~257~0~0~';
+  $l['5x3'] = 'pr10|5x3~лес~лес~'.$temperature.'~127~0~0~';
+  $l['5x4'] = 'pr10|5x4~лес~лес~'.$temperature.'~57~0~0~';
+  $l['5x5'] = 'pr10|5x5~лес~лес~'.$temperature.'~136~0~0~';
+  $l['5x7'] = 'pr10|5x7~лес~лес~'.$temperature.'~458~0~0~';
+  $l['6x2'] = 'pr10|6x2~берег реки~берег реки~'.$temperature.'~34~0~0~';
+  $l['6x4'] = 'pr10|6x4~лес~лес~'.$temperature.'~45~0~0~';
+  $l['6x6'] = 'pr10|6x6~лес~лес~'.$temperature.'~16~0~0~';
+  $l['6x7'] = 'pr10|6x7~лес~лес~'.$temperature.'~45~0~0~';
+  $l['7x3'] = 'pr10|7x3~берег реки~берег реки~'.$temperature.'~6~0~0~pr11|1x2:3';
+  $l['7x4'] = 'pr10|7x4~лес~лес~'.$temperature.'~24~0~0~';
+  $l['7x5'] = 'pr10|7x5~лес~лес~'.$temperature.'~27~0~0~';
+  $l['7x6'] = 'pr10|7x6~лес~лес~'.$temperature.'~27~0~0~';
+  $l['7x7'] = 'pr10|7x7~лес~лес~'.$temperature.'~47~0~0~';
+?>

@@ -1,0 +1,44 @@
+﻿<?php
+  // juzhnyj les (sfr2)
+  $locmap = 'sfr2';
+  $w = do_mysql ("SELECT weather FROM maps WHERE map = '".$locmap."';");
+  $w = mysql_result ($w, 0);
+  if ($w == 0 || $w == 1 || $w == 0.5) $temperature = -1;
+  if ($w == 2 || $w == 3 || $w == 4 || $w == 5) $temperature = 0;
+  if ($w == 6) $temperature = 1;
+  $w = do_mysql ("SELECT weather FROM maps WHERE map = '".$locmap."';");
+  $w = mysql_result ($w, 0);
+  if ($w == 0 || $w == 1) $temperature = -1;
+  if ($w == 2 || $w == 3 || $w == 4 || $w == 5) $temperature = 0;
+  if ($w == 6) $temperature = 1;
+  $l['1x4'] = 'sfr2|1x4~Южный лес~Южный лес~'.$temperature.'~2~0~0~sfr1|10x4:4';
+  $l['1x5'] = 'sfr2|1x5~лес~по лесу~'.$temperature.'~78~0~0~';
+  $l['2x1'] = 'sfr2|2x1~лесная гуща~лесная гуща~'.$temperature.'~25~0~0~';
+  $l['2x2'] = 'sfr2|2x2~лесная гуща~лесная гуща~'.$temperature.'~37~0~0~';
+  $l['2x4'] = 'sfr2|2x4~лес~по лесу~'.$temperature.'~13~0~0~';
+  $l['2x6'] = 'sfr2|2x6~лес~по лесу~'.$temperature.'~38~0~0~';
+  $l['3x1'] = 'sfr2|3x1~лесная гуща~лесная гуща~'.$temperature.'~45~0~0~';
+  $l['3x3'] = 'sfr2|3x3~лес~по лесу~'.$temperature.'~56~0~0~';
+  $l['3x5'] = 'sfr2|3x5~тропинка~тропинка~'.$temperature.'~168~0~0~';
+  $l['3x7'] = 'sfr2|3x7~развилка~на развилку~'.$temperature.'~268~0~0~';
+  $l['3x8'] = 'sfr2|3x8~лес~по лесу~'.$temperature.'~37~0~0~';
+  $l['4x1'] = 'sfr2|4x1~Южный лес~Южный лес~'.$temperature.'~24~0~0~sfr4|5x9:8';
+  $l['4x2'] = 'sfr2|4x2~лес~по лесу~'.$temperature.'~57~0~0~';
+  $l['4x3'] = 'sfr2|4x3~лес~по лесу~'.$temperature.'~248~0~0~';
+  $l['4x4'] = 'sfr2|4x4~тропинка~тропинка~'.$temperature.'~17~0~0~';
+  $l['4x6'] = 'sfr2|4x6~лес~по лесу~'.$temperature.'~18~0~0~';
+  $l['4x9'] = 'sfr2|4x9~Южный лес~Южный лес~'.$temperature.'~6~0~0~eway|14x5:2';
+  $l['5x2'] = 'sfr2|5x2~лес~по лесу~'.$temperature.'~145~0~0~';
+  $l['5x5'] = 'sfr2|5x5~лес~по лесу~'.$temperature.'~128~0~0~';
+  $l['5x6'] = 'sfr2|5x6~лес~по лесу~'.$temperature.'~27~0~0~';
+  $l['5x7'] = 'sfr2|5x7~лес~по лесу~'.$temperature.'~7~0~0~';
+  $l['6x2'] = 'sfr2|6x2~лес~по лесу~'.$temperature.'~34~0~0~';
+  $l['6x4'] = 'sfr2|6x4~лес~по лесу~'.$temperature.'~12~0~0~';
+  $l['6x5'] = 'sfr2|6x5~лес~по лесу~'.$temperature.'~378~0~0~';
+  $l['6x7'] = 'sfr2|6x7~лес~по лесу~'.$temperature.'~38~0~0~';
+  $l['7x3'] = 'sfr2|7x3~лес~по лесу~'.$temperature.'~26~0~0~';
+  $l['7x4'] = 'sfr2|7x4~лес~по лесу~'.$temperature.'~17~0~0~';
+  $l['7x6'] = 'sfr2|7x6~лес~по лесу~'.$temperature.'~16~0~0~';
+  $l['7x8'] = 'sfr2|7x8~лес~по лесу~'.$temperature.'~26~0~0~';
+  $l['7x9'] = 'sfr2|7x9~Южный лес~Южный лес~'.$temperature.'~7~0~0~eway|17x5:2';
+?>

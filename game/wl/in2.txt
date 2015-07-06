@@ -1,0 +1,8 @@
+balista tower|245|1400
+viper trap|1280|3200
+nail trap|3744|8112
+city wall|130|16900
+overheated oil|25965|30547
+arrow culverin|31250|62500
+moat|1000|125000
+hell gate|722500|850000

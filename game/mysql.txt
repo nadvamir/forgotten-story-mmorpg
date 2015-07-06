@@ -1,0 +1,316 @@
+CREATE TABLE `players` (
+`id_player` INT( 40 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`login` TINYTEXT NOT NULL ,
+`pass` TINYTEXT NOT NULL ,
+`email` TINYTEXT NOT NULL ,
+`gender` TINYTEXT NOT NULL ,
+`age` INT( 2 ) NOT NULL ,
+`classof` INT( 1 ) NULL ,
+`money` INT( 9 ) NULL ,
+`stats` TINYTEXT NULL ,
+`skills` TEXT NULL ,
+`rase` INT( 2 ) NULL ,
+`karma` INT( 4 ) NULL ,
+`life` TINYTEXT NULL ,
+`mana` TINYTEXT NULL ,
+`carry` TINYTEXT NULL ,
+`location` TINYTEXT NULL ,
+`last` TINYTEXT NULL ,
+`clan` TINYTEXT NULL ,
+`status1` TINYTEXT NULL ,
+`qlvl` TINYTEXT NULL,
+`in_battle` TINYTEXT NULL ,
+`admin` INT( 1 ) NULL ,
+`settings` TINYTEXT NULL ,
+`journal` LONGBLOB NULL ,
+`contacts` TEXT NULL ,
+`magic` TEXT NULL ,
+`smq` TEXT NULL ,
+`marry` TEXT NULL ,
+`guild` TEXT NULL,
+`kombo` TEXT NULL, 
+`active` INT( 1 ) NULL,
+`affected` TINYTEXT NULL,
+`regtime` INT( 20 ) NULL,
+`monsterkill` INT( 5 ) NULL,
+`playerkill` INT( 5 ) NULL,
+`kbmonster` INT( 5 ) NULL,
+`kbplayer` INT( 5 ) NULL,
+`actcode` TINYTEXT NULL,
+`name` TINYTEXT NULL,
+`bd` TEXT NULL,
+`hidden` INT( 3 ) NULL,
+`ctreasures` INT( 4 ) NULL,
+`treasures` TEXT NULL,
+`lastnews` DATETIME NULL,
+`gold` INT( 9 ) NULL,
+`account` INT( 2 ) NULL,
+`account_to` INT( 20 ) NULL,
+`aura` INT( 3 ) NULL,
+`walking` INT( 3 ) NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `npc` (
+`id_npc` INT( 60 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` LONGBLOB NOT NULL ,
+`fullname` TINYTEXT NOT NULL ,
+`type` TINYTEXT NOT NULL ,
+`life` TINYTEXT NOT NULL ,
+`location` TINYTEXT NOT NULL ,
+`arrived` INT( 20 ) NULL ,
+`lastattack` INT( 20 ) NULL ,
+`move` INT( 5 ) NULL ,
+`in_battle` TINYTEXT NULL ,
+`quest` TINYTEXT NULL,
+`dmg` TINYTEXT NULL,
+`armor` TINYTEXT NULL,
+`exp` TINYTEXT NULL,
+`chanse` TINYTEXT NULL,
+`drop2` TEXT NULL,
+`hunt` TINYTEXT NULL,
+`map` TINYTEXT NULL,
+`belongs` TINYTEXT NULL,
+`lastregen` INT( 20 ) NULL,
+`attack_speed` INT( 3 ) NULL,
+`affected` TINYTEXT NULL,
+`realname` TINYTEXT NOT NULL,
+`hidden` INT( 3 ) NULL,
+`str` INT( 3 ) NULL,
+`dex` INT( 3 ) NULL,
+`int` INT( 3 ) NULL,
+`rea` INT( 3 ) NULL,
+`other` INT( 3 ) NULL,
+`exphas` INT( 12 ) NULL,
+`expto` INT( 12 ) NULL,
+`sp` INT( 3 ) NULL,
+`lvl` INT( 3 ) NULL,
+`monsterkill` INT( 10 ) NULL,
+`playerkill` INT( 10 ) NULL,
+`effect` TINYTEXT NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `items` (
+`id_item` INT( 80 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` LONGBLOB NOT NULL ,
+`fullname` TINYTEXT NOT NULL ,
+`type` TINYTEXT NOT NULL ,
+`on_take` TEXT NULL ,
+`on_use` TEXT NULL ,
+`on_drop` TEXT NULL ,
+`price` INT( 7 ) NOT NULL ,
+`dmg` TINYTEXT NULL ,
+`armor` TINYTEXT NULL ,
+`belongs` TINYTEXT NULL ,
+`location` TINYTEXT NULL,
+`weight` INT( 3 ) NULL,
+`map` TINYTEXT NULL,
+`realname` TINYTEXT NOT NULL,
+`is_in` TINYTEXT NULL,
+`jewel` TINYTEXT NULL,
+`pprice` INT( 7 ) NULL,
+`str` INT( 7 ) NULL,
+`maxduraminus` INT( 7 ) NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `locations` (
+`fullname` TINYTEXT NOT NULL ,
+`region` TINYTEXT NOT NULL ,
+`inloc` TEXT NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `dead` (
+`name` LONGBLOB NOT NULL ,
+`fullname` TINYTEXT NULL,
+`hunt` TEXT NULL,
+`location` TINYTEXT NULL,
+`map` TINYTEXT NULL,
+`puttime` DATETIME NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `quests` (
+`id_quest` INT( 16 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`questname` TINYTEXT NOT NULL ,
+`npc` TINYTEXT NOT NULL,
+`region` TINYTEXT NOT NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `session` (
+`sid` TINYTEXT NOT NULL,
+`login` TINYTEXT NOT NULL,
+`pass` TINYTEXT NOT NULL,
+`puttime` DATETIME NOT NULL,
+`ip` TINYTEXT NOT NULL,
+`num` INT( 1 ) NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `ls` (
+`id_ls` INT( 16 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`sender` INT( 11 ) NOT NULL ,
+`sentfor` INT( 11 ) NOT NULL ,
+`senttime` DATETIME NOT NULL ,
+`readed` ENUM( 'no', 'yes' ) NOT NULL 
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `maps` (
+`map` TINYTEXT NOT NULL,
+`active` TINYTEXT NULL,
+`actions` TEXT NULL,
+`weather` INT( 2 ) NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `customers` (
+`user_ip` TINYTEXT NOT NULL ,
+`user_agent` TINYTEXT NOT NULL ,
+`puttime` DATETIME NOT NULL 
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `forums` (
+`id_forum` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` LONGBLOB NOT NULL 
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `themes` (
+`id_theme` INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` LONGBLOB NOT NULL ,
+`id_forum` INT( 10 ) NOT NULL ,
+`puttime` DATETIME NOT NULL ,
+`author` TINYTEXT NOT NULL ,
+`lpost` INT( 20 ) NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `posts` (
+`id_post` INT( 60 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`id_theme` INT( 10 ) NOT NULL ,
+`puttime` DATETIME NOT NULL ,
+`author` TINYTEXT NOT NULL 
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `gamesys` (
+`month` INT( 1 ) NULL ,
+`npc_move` INT( 20 ) NULL ,
+`weather_ch` INT( 20 ) NULL ,
+`life_regen` INT( 20 ) NULL,
+`trader_ch` INT( 20 ) NULL,
+`quests_ch` INT( 20 ) NULL
+);
+
+
+CREATE TABLE `clans` (
+`clanname` TINYTEXT NULL ,
+`money` INT( 20 ) NULL ,
+`politics` TINYTEXT NULL ,
+`newcomers` TINYTEXT NULL ,
+`task` LONGBLOB NULL ,
+`clansite` TEXT NULL ,
+`rank1` BLOB NULL ,
+`rank2` BLOB NULL ,
+`rank3` BLOB NULL ,
+`rank4` BLOB NULL ,
+`rank5` BLOB NULL ,
+`rank6` BLOB NULL ,
+`rank7` BLOB NULL 
+);
+
+
+CREATE TABLE `magic` (
+`fullname` TINYTEXT NOT NULL ,
+`name` LONGBLOB NOT NULL ,
+`classof` TINYTEXT NOT NULL ,
+`type` TINYTEXT NOT NULL ,
+`dmgmin` INT( 4 ) NULL ,
+`dmgmax` INT( 4 ) NULL ,
+`lplus` INT( 4 ) NULL ,
+`cname` TINYTEXT NULL ,
+`effect` TINYTEXT NULL ,
+`blood` INT( 1 ) NULL ,
+`fire` INT( 1 ) NULL ,
+`poison` INT( 1 ) NULL ,
+`words` TINYTEXT NULL ,
+`mana` INT( 4 ) NULL ,
+`minskill` INT( 2 ) NULL ,
+`difficulty` INT( 4 ) NULL ,
+`reagents` TINYTEXT NULL ,
+`timewait` INT( 10 ) NULL
+);
+
+
+CREATE TABLE `news` (
+`id_new` INT( 60 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`puttime` DATETIME NOT NULL ,
+`author` TINYTEXT NOT NULL 
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `fonline` (
+`login` TINYTEXT NOT NULL ,
+`is_in` LONGBLOB NOT NULL ,
+`puttime` DATETIME NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE chat (
+id_chat INT( 20 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+text LONGBLOB NULL,
+puttime DATETIME NULL,
+msgto TINYTEXT NULL,
+map TINYTEXT NULL,
+msgfrom TINYTEXT NULL
+);
+
+CREATE TABLE castle (
+name TINYTEXT NULL,
+belongs TINYTEXT NULL,
+doorhp INT NULL
+);
+
+CREATE TABLE smith (
+id_player INT( 20 ) NULL,
+smith TINYTEXT NULL,
+smith_img TINYTEXT NULL,
+puttime DATETIME NULL
+);
+
+CREATE TABLE carpenter (
+id_player INT( 20 ) NULL,
+carpenter TINYTEXT NULL,
+carpenter_img TINYTEXT NULL,
+puttime DATETIME NULL
+);
+
+CREATE TABLE furrer (
+id_player INT( 20 ) NULL,
+furrer TINYTEXT NULL,
+furrer_img TINYTEXT NULL,
+puttime DATETIME NULL, 
+material BLOB NULL,
+modifier INT( 10 ) NULL
+);
+
+CREATE TABLE anketa (
+id_anketa INT( 20 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+id_player INT( 20 ) NULL ,
+avatar TINYTEXT NULL ,
+letter BLOB NULL ,
+country LONGBLOB NULL,
+city LONGBLOB NULL,
+about LONGBLOB NULL
+);
+
+CREATE TABLE ip_list (
+id_ip INT( 20 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ip TINYTEXT NULL ,
+user_agent TINYTEXT NULL ,
+logins TEXT NULL
+);

@@ -1,0 +1,1 @@
+Unknown error type: [8] Undefined <br/>index: msg<br/>Error on line 7 in file /home/vol12<br/>/byethost17.com/b17_5589218<br/>/htdocs/game/modules/s_addls.php<br/><br/>HP: 4900 | MP: 3100<br/>ошибка:<br/><br/><br/>зачем нужно слать пустое <br/>сообщение?!..<br/><br/>далее<br/><br/>0.0356сек.<br/><br/><br/>©_himura_
